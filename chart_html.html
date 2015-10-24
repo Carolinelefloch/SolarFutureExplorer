@@ -13,6 +13,7 @@
   </ul>
 </div>
 
+
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -89,30 +90,30 @@ var energy_usage_bakersfield = [
 ]
 
 var energy_usage_barstow = [
-0.705975973,
-0.605050212,
-0.558646778,
-0.538434605,
-0.561437459,
-0.675498693,
-0.891261463,
-0.987888071,
-0.980792489,
-1.054202302,
-1.121052175,
-1.214496653,
-1.320051396,
-1.43436116,
-1.556162837,
-1.689862477,
-1.93764051,
-2.06540027,
-2.062988137,
-2.014830941,
-1.908180459,
-1.606081522,
-1.255123921,
-0.923990348,
+0.705975973*5,
+0.605050212*5,
+0.558646778*5,
+0.538434605*5,
+0.561437459*5,
+0.675498693*5,
+0.891261463*5,
+0.987888071*5,
+0.980792489*5,
+1.054202302*5,
+1.121052175*5,
+1.214496653*5,
+1.320051396*5,
+1.43436116*5,
+1.556162837*5,
+1.689862477*5,
+1.93764051*5,
+2.06540027*5,
+2.062988137*5,
+2.014830941*5,
+1.908180459*5,
+1.606081522*5,
+1.255123921*5,
+0.923990348*5,
 ]
 
 var solar_prod_arcada = [
@@ -201,11 +202,11 @@ var solar_prod_barstow = [
 $(function () {
     $('#container').highcharts({
         title: {
-            text: 'Energy Usage vs Solar System Production',
+            text: 'Energy Usage vs Solar Production',
             x: -20 //center
         },
         subtitle: {
-            text: 'Hourly averages over the course of a year',
+            text: 'Hourly averages for a city over the course of a year',
             x: -20
         },
         xAxis: {
@@ -216,7 +217,7 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Kilowatt-hours (kWh)'
+                text: '$ per kWh'
             },
             plotLines: [{
                 value: 0,
